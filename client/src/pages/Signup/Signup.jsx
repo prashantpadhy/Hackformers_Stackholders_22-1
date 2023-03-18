@@ -1,10 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Button, Row, Container, Card, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+// import axios from 'axios'
 
 function Signup() {
-    return (
-        <div>
+  const Navigate = useNavigate()
+  const [user, setUser] = useState({ name: "", email: "", password: "", cpassword: "" })
+
+  const onChange = (e) => {
+    e.preventDefault()
+    setUser({ ...user, [e.target.name]: e.target.value })
+
+  }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    if (user.password !== user.cpassword) {
+      alert("Both password field should be same")
+      return;
+    }
+    else {
+      try{
+        const response = await fetch("http://localhost:8080/api/auth/signup", {
+          method: 'POST',
+          headers: {
+            'Content-Type' : 'application/json',
+            'Access-Control-Allow-Origin' : 'http://localhost:3000',
+          },
+          body: JSON.stringify({'name': user.name, 'email': user.email, 'password': user.password, 'cpassword': user.cpassword })
+        });
+        const json = await response.json();
+        console.log(json)
+        Navigate('/login')
+
+      }
+      catch(err){
+        console.log(err)
+        Navigate('/signup')
+      }
+     
+      
+     
+    }
+  }
+
+
+  return (
+    <div>
       <Container>
         <Row className="vh-100 d-flex justify-content-center align-items-center">
           <Col md={8} lg={6} xs={12}>
@@ -15,17 +56,17 @@ function Signup() {
                     Logo
                   </h2>
                   <div className="mb-3">
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                       <Form.Group className="mb-3" controlId="Name">
                         <Form.Label className="text-center">Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter Name" />
+                        <Form.Control type="text" placeholder="Enter Name" name='name' onChange={onChange} required="True"/>
                       </Form.Group>
 
                       <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label className="text-center">
                           Email address
                         </Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Control type="email" placeholder="Enter email" name='email' onChange={onChange} required="True" />
                       </Form.Group>
 
                       <Form.Group
@@ -33,14 +74,14 @@ function Signup() {
                         controlId="formBasicPassword"
                       >
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Password" name='password' onChange={onChange} required="True"/>
                       </Form.Group>
                       <Form.Group
                         className="mb-3"
                         controlId="formBasicPassword"
                       >
                         <Form.Label>Confirm Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="Password" name='cpassword' onChange={onChange} required="True"/>
                       </Form.Group>
                       <Form.Group
                         className="mb-3"
@@ -68,7 +109,7 @@ function Signup() {
         </Row>
       </Container>
     </div>
-    )
+  )
 }
 
 export default Signup

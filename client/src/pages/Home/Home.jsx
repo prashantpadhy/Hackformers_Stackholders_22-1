@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Home.css"
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -10,22 +11,20 @@ const Home = () => {
           <div>
             <h2 className="float-md-start mb-0">CareerMate</h2>
             <nav className="nav nav-masthead justify-content-center float-md-end">
-              <a
+              <Link
                 className="nav-link fw-bold py-1 px-0 active"
                 aria-current="page"
-                href="#"
+                to="/"
               >
                 Home
-              </a>
-              <a className="nav-link fw-bold py-1 px-0" href="#">
+              </Link>
+              <Link className="nav-link fw-bold py-1 px-0" to="/about">
                 About
-              </a>
-              <a className="nav-link fw-bold py-1 px-0" href="#">
+              </Link>
+              <Link className="nav-link fw-bold py-1 px-0" to="/signup">
                 Login
-              </a>
-              <a className="nav-link fw-bold py-1 px-0" href="#">
-                Signup
-              </a>
+              </Link>
+             
             </nav>
           </div>
         </header>
@@ -36,12 +35,12 @@ const Home = () => {
            We are dedicated to providing you with the tools, resources, and guidance necessary to make informed decisions about your career path and to help you achieve your professional goals.
           </p>
           <p className="lead">
-            <a
-              href="#"
+            <Link
+              to="/aptitude"
               className="btn btn-lg btn-light fw-bold border-white bg-white"
             >
-              Explore More?
-            </a>
+              Explore More {`>`}
+            </Link>
           </p>
         </main>
 
