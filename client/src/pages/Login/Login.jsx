@@ -1,9 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Col, Button, Row, Container, Card, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate } from 'react-router-dom';
 // import './Login.css'
 
 function Login() {
+    const [user , setUser] = useState({email : ""  , password : ""})
+    const Navigate = useNavigate()
+
+    const onChange = (e)=>{
+        e.preventDefault()
+        setUser({ ...user, [e.target.name]: e.target.value })
+
+    }
+
+
+    const handleSubmit = async (e)=>{
+        e.preventDefault()
+        try{
+            const userData = await fetch('http://localhost:8080/api/auth/login', {
+                method : "POST",
+                headers : { 
+                    'Content-Type' : 'application/json',
+                    'Access-Control-Allow-Origin' : 'http://localhost:3000',
+                },
+                body : JSON.stringify({'email': user.email, 'password': user.password })
+            })
+            const json = await userData.json()
+            if(json.success){
+                Navigate('/')
+            }
+
+        }
+        catch(err){
+            console.log(err)
+            // Navigate('/signup')
+
+        }
+
+    }
     return (
         <div>
             <Container>
@@ -16,12 +50,12 @@ function Login() {
                                         Logo
                                     </h2>
                                     <div className="mb-3">
-                                        <Form>
+                                        <Form onSubmit={handleSubmit}>
                                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                                 <Form.Label className="text-center">
                                                     Email address
                                                 </Form.Label>
-                                                <Form.Control type="email" placeholder="Enter email" />
+                                                <Form.Control type="email" placeholder="Enter email" name='email' onChange={onChange} required="True"/>
                                             </Form.Group>
 
                                             <Form.Group
@@ -29,7 +63,7 @@ function Login() {
                                                 controlId="formBasicPassword"
                                             >
                                                 <Form.Label>Password</Form.Label>
-                                                <Form.Control type="password" placeholder="Password" />
+                                                <Form.Control type="password" placeholder="Password" name='password' onChange={onChange} required="True"/>
                                             </Form.Group>
                                             <Form.Group
                                                 className="mb-3"
