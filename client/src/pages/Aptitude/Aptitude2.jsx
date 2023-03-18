@@ -1,28 +1,32 @@
 import React, { useState } from 'react'
-import { basic } from './questions'
 import {useNavigate} from 'react-router-dom'
-// import {detailed} from './questions2'
+import {detailed} from './questions2'
 import './Aptitude.css'
-// import Home from '../Home/Home'
-// import Agreement from '../../components/Agreement'
 
-function Aptitude({result , setResult}) {
+function Aptitude2({result , setResult}) {
 
     const Navigate = useNavigate()
     const [activeQuestion, setActiveQuestion] = useState(0)   //current Question Number
     const [selectedAnswer, setSelectedAnswer] = useState(0)   //current Question Selected Option
     const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null)
+   
 
-    const { questions } = basic
-    // const {questions1 } = detailed
-    const { question, choices, type } = questions[activeQuestion]
+    // const { questions } = basic
+    const {questions1 } = detailed
+    var sorted = []
+    for(var q in result){
+        sorted.push([q , result[q]])
+    }
+    sorted.sort((a,b)=>a[1]-b[1])
+    console.log(sorted)
+    const { question, choices, type } = questions1[activeQuestion]
     // const { question1, choices1, type1 } = questions1[activeQuestion-9]
-
 
     const handleLast = ()=>{
         console.log(result)
-        Navigate('/aptitude2')
+        Navigate('/result')
     }
+
     const onClickNext = () => {
         setSelectedAnswerIndex(null)
         if (type === 'web') {
@@ -91,10 +95,11 @@ function Aptitude({result , setResult}) {
 
         }
 
-        if (activeQuestion !== questions.length - 1) {
+        if (activeQuestion !== 8) {
             setActiveQuestion((prev) => prev + 1)
         } else {
             setActiveQuestion(0)
+            Navigate('/result')
             console.log(result)
         }
     }
@@ -118,6 +123,7 @@ function Aptitude({result , setResult}) {
 
         <div className='main-container'>
             <div className="quiz-container">
+                
                     <div>
                         <div>
                             <span className="active-question-no">
@@ -140,15 +146,16 @@ function Aptitude({result , setResult}) {
                         </ul>
                         <div className="flex-right">
                             <button
-                                onClick={activeQuestion === questions.length - 1 ?  handleLast: onClickNext}
+                                onClick={activeQuestion === 8 ?  handleLast: onClickNext}
                                 disabled={selectedAnswerIndex === null}>
-                                {'Next'}
+                                {activeQuestion === 8 ? 'Finish' : 'Next'}
                             </button>
                         </div>
                     </div>
+              
             </div>
         </div>
     )
 }
 
-export default Aptitude
+export default Aptitude2
