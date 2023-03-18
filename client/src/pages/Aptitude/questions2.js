@@ -77,16 +77,39 @@ export var detailed = {
       {
         question:
           'Have you considered automation as a proffession or are you interested in it?',
-        choices: ['no' , 'maybe' ,'yes'],
-        type: 'MCQs',
+        choices: ['NO' , 'MAYBE' ,'YES'],
+        type: 'IOT',
         correctAnswer: 'stringify()',
       },
       {
         question:
-          '?',
-        choices: ['no' , 'maybe' ,'yes'],
-        type: 'MCQs',
+          'Are you interested in developing and deploying software applications that integrate with connected devices?',
+        choices: ['NO' , 'MAYBE' ,'YES'],
+        type: 'IOT',
         correctAnswer: 'stringify()',
+    
+      },
+      {
+        question:
+          'Are you familiar with cloud computing platforms such as Amazon web services(AWS),Microsoft Azure or Google cloud platforms?',
+        choices: ['NO' , 'YES'],
+        type: 'CC',
+        correctAnswer: 'stringify()',
+      },
+      {
+        question:
+          'Do you enjoy working with servers and networking infrastructure?',
+        choices: ['NO' , 'YES'],
+        type: 'CC',
+        correctAnswer: 'stringify()',
+      },
+      {
+        question:
+          'Are you interested in virtualization and containerizzation technologies?',
+        choices: ['NO' , 'MAYBE' ,'YES'],
+        type: 'CC',
+        correctAnswer: 'stringify()',
+    
       }
     ]
 }
