@@ -1,20 +1,19 @@
 import React from 'react'
-import "/index.css"
+import "./about.css"
 
-const index = () => {
+const About = () => {
   return (
    <>
-   <div class="about-1">
+   <div className="about-1">
          <h1> ABOUT US </h1>
-         <P></P>
      </div>
      <div id="about-2">
-     <div class="content-box-lg">
-         <div class="container">
-             <div class="row">
-                 <div class="col-md-4">
-                    <div class="about-item text-center">
-                     <i class="fa fa-book"></i>
+     <div className="content-box-lg">
+         <div className="container">
+             <div className="row">
+                 <div className="col-md-4">
+                    <div className="about-item text-center">
+                     <i className="fa fa-book"></i>
                      <h3>MISSION</h3>
                      <hr/>
                      <p> 
@@ -23,9 +22,9 @@ const index = () => {
                         </p>
                      </div>
                  </div>
-                 <div class="col-md-4">
-                    <div class="about-item text-center">
-                     <i class="fa fa-globe"></i>
+                 <div className="col-md-4">
+                    <div className="about-item text-center">
+                     <i className="fa fa-globe"></i>
                      <h3>VISION</h3>
                      <hr/>
                      <br/>
@@ -34,9 +33,9 @@ const index = () => {
                         average salary.  </p>
                      </div>
                  </div>
-                 <div class="col-md-4">
-                    <div class="about-item text-center">
-                     <i class="fa fa-pencil"></i>
+                 <div className="col-md-4">
+                    <div className="about-item text-center">
+                     <i className="fa fa-pencil"></i>
                      <h3>TEAM MEMBERS</h3>
                      <hr/>
                      <br />
@@ -58,11 +57,11 @@ const index = () => {
             </div>
          </div>
       </div> 
-      <footer class="text-center">
+      <footer className="text-center">
     <p>Copyright &copy; 2023 All rights reserved by Team Stackholders.</p>
 </footer> 
    </>
   )
 }
 
-export default index
+export default About

@@ -7,7 +7,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 // import Webimg from '../../assets/55.jpg'
 // import './Web.css'
 
-const Web = () => {
+const Ml = () => {
   return (
     <>
     <div class="container-fluid my-3">
@@ -23,7 +23,7 @@ const Web = () => {
               aria-controls="collapseOne"
             >
               {" "}
-              Phase 1: (Introduction to the Web development){" "}
+              Phase 1: (Introduction to the Machine Learning){" "}
             </button>
           </h2>
           <div
@@ -33,7 +33,7 @@ const Web = () => {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>Learn all the basics of web development</strong>
+              <strong>Learn all the basics of Machine Learning</strong>
 
               {/* frontend */}
               <div class="accordion-item">
@@ -47,7 +47,7 @@ const Web = () => {
                     aria-controls="cThree"
                   >
                     {" "}
-                    Frontend
+                    Data Scientist
                   </button>
                 </h2>
                 <div
@@ -57,13 +57,7 @@ const Web = () => {
                 >
                   <div class="accordion-body">
                     <strong>
-                      Front-end development is the process of creating the
-                      visual and interactive elements of a website or
-                      application that users interact with directly. Front-end
-                      developers use a combination of programming languages,
-                      frameworks, and libraries to create the user interface
-                      and ensure that it is functional, intuitive, and
-                      visually appealing.
+                    A data scientist in machine learning is a skilled professional who is adept at using advanced algorithms and statistical techniques to extract insights from complex data sets. They possess a unique combination of expertise in computer science, mathematics, and domain-specific knowledge that allows them to analyze large amounts of data and build predictive models that can be used to make informed business decisions.
                     </strong>
 
                     {/* html */}
@@ -78,7 +72,7 @@ const Web = () => {
                           aria-controls="cThree"
                         >
                           {" "}
-                          HTML
+                          Python
                         </button>
                       </h2>
                       <div
@@ -89,37 +83,27 @@ const Web = () => {
                         <div class="accordion-body">
                           <ul>
                             <li>
-                              HTML is the markup language used to structure
-                              content on the web. It provides the basic
-                              structure of a web page and is used to define
-                              the layout and content of text, images, and
-                              other media. HTML is used extensively by
-                              front-end developers to create and design web
-                              pages.
-                            </li>
-                            <li>
-                              HTML knowledge is essential for creating clean,
-                              well-structured code that is optimized for
-                              search engines and user experience. HTML is also
-                              used by web designers to create mockups and
-                              wireframes of web pages, which are then
-                              translated into code by front-end developers.
+                            Python is a popular programming language for data science, thanks to its easy-to-learn syntax, powerful libraries for data analysis and visualization (such as NumPy, Pandas, and Matplotlib), 
+and support for machine learning and deep learning frameworks (such as scikit-learn, TensorFlow, and PyTorch).
                             </li>
                             <li>
                               Resource link:
-                              <a href="https://www.w3schools.com/html/">
+                              <a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">
                                 w3schools
                               </a>
                               ,
-                              <a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/">
+                              <a href="https://www.python.org/about/gettingstarted/">
                                 freecodechamp
                               </a>
                             </li>
                             <li>
                               {" "}
                               IDE link:
-                              <a href="https://code.visualstudio.com/">
-                                VScode
+                              <a href="https://jupyter.org/">
+                                Jupyter Notebook
+                              </a>
+                              <a href="https://www.spyder-ide.org/">
+                                Spyder
                               </a>
                             </li>
                           </ul>
@@ -139,7 +123,7 @@ const Web = () => {
                           aria-controls="cs"
                         >
                           {" "}
-                          CSS{" "}
+                          SQL{" "}
                         </button>
                       </h2>
                       <div
@@ -150,34 +134,27 @@ const Web = () => {
                         <div class="accordion-body">
                           <ul>
                             <li>
-                              CSS (Cascading Style Sheets) developer is
-                              responsible for designing and implementing the
-                              visual elements of a website or web application.
-                              This involves creating and styling the layout,
-                              typography, colors, and other design elements of
-                              a website or application using CSS.
-                            </li>
-                            <li>
-                              A CSS developer works closely with web designers
-                              and developers to ensure that the visual design
-                              of a website or application is both
-                              aesthetically pleasing and functional.
+                            Structured Query Language (SQL) is a language used for managing and manipulating relational databases.
+ As a data scientist, you may need to work with large datasets stored in databases, so learning SQL can be helpful for querying and extracting the data you need.
                             </li>
                             <li>
                               Resource link:
-                              <a href="https://www.w3schools.com/css/">
-                                w3schools
+                              <a href="https://www.codecademy.com/learn/learn-sql">
+                                Code Academy
                               </a>
                               ,
-                              <a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-css/">
-                                freecodechamp
+                              <a href="https://sqlzoo.net/">
+                                SQLZoo
                               </a>
                             </li>
                             <li>
                               {" "}
-                              IDE link:
-                              <a href="https://code.visualstudio.com/">
-                                VScode
+                              Tool link:
+                              <a href="https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms">
+                                 SQL server Management studio
+                              </a>
+                              <a href="https://www.navicat.com/">
+                                Navicat
                               </a>
                             </li>
                           </ul>
@@ -197,7 +174,7 @@ const Web = () => {
                           aria-controls="sj"
                         >
                           {" "}
-                          JS{" "}
+                          SCALA{" "}
                         </button>
                       </h2>
                       <div
@@ -208,29 +185,27 @@ const Web = () => {
                         <div class="accordion-body">
                           <ul>
                             <li>
-                            JavaScript developer is responsible for creating and implementing complex web applications using the JavaScript programming language.
- JavaScript is a front-end language that allows developers to create interactive web pages and user interfaces.
-
-                            </li>
-                            <li>
-                            The role of a JavaScript developer is critical to building complex web applications that are user-friendly, efficient, and secure.
- They are essential members of web development teams and play a key role in ensuring that websites and web applications function smoothly and effectively.
+                              CScala is a programming language that combines object-oriented and functional programming paradigms.
+ It's popular in big data applications, thanks to its compatibility with Hadoop and Spark, as well as its concise syntax and powerful libraries.
                             </li>
                             <li>
                               Resource link:
-                              <a href="https://www.w3schools.com/js/">
-                                w3schools
+                              <a href="https://www.coursera.org/learn/progfun1">
+                                Coursera
                               </a>
                               ,
-                              <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript//">
-                                freecodecamp
+                              <a href="https://horstmann.com/scala/">
+                                Horstmann
                               </a>
                             </li>
                             <li>
                               {" "}
                               IDE link:
-                              <a href="https://code.visualstudio.com/">
-                                VScode
+                              <a href="https://www.jetbrains.com/idea/">
+                                JETBrains
+                              </a>
+                              <a href="https://www.sublimetext.com/">
+                                Sublime Text
                               </a>
                             </li>
                           </ul>
@@ -254,7 +229,7 @@ const Web = () => {
                     aria-controls="eb"
                   >
                     {" "}
-                    Backend
+                    Data Analyst
                   </button>
                 </h2>
                 <div
@@ -264,10 +239,8 @@ const Web = () => {
                 >
                   <div class="accordion-body">
                     <strong>
-                      A back-end developer is responsible for building and
-                      maintaining the server-side of web applications. They
-                      work with databases, servers, and APIs to ensure that
-                      the web application functions smoothly and efficiently.
+                    Data analysis is an exciting and rewarding career path for those who enjoy working with data and using it to drive decision-making.
+ As a data analyst, you will be responsible for collecting, processing, and analyzing large datasets to extract insights and inform business strategy.
                     </strong>
 
                     {/* python */}
@@ -293,35 +266,27 @@ const Web = () => {
                         <div class="accordion-body">
                           <ul>
                             <li>
-                              In back-end development, Python is often used
-                              for tasks such as data processing and storage,
-                              server-side scripting, and API development. It
-                              is also commonly used for building machine
-                              learning and artificial intelligence
-                              applications.
-                            </li>
-                            <li>
-                              Overall, Python is a powerful and flexible
-                              language that is well-suited to back-end
-                              development. Its simplicity, ease of use, and
-                              large ecosystem of libraries and frameworks make
-                              it a popular choice among developers.
+                            Python is one of the most widely used programming languages for data analysis.
+ It is user-friendly and has a large number of libraries specifically designed for data analysis and visualization, such as pandas, NumPy, and Matplotlib.
                             </li>
                             <li>
                               Resource link:
-                              <a href="https://www.w3schools.com/html/">
-                                w3schools
+                              <a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">
+                                Datacamp
                               </a>
                               ,
-                              <a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/">
-                                freecodechamp
+                              <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">
+                                Github
                               </a>
                             </li>
                             <li>
                               {" "}
                               IDE link:
-                              <a href="https://code.visualstudio.com/">
-                                VScode
+                              <a href="https://www.jetbrains.com/pycharm/">
+                                Pycharm
+                              </a>
+                              <a href="https://jupyter.org/">
+                                Jupyter Notebook
                               </a>
                             </li>
                           </ul>
@@ -341,7 +306,7 @@ const Web = () => {
                           aria-controls="vaj"
                         >
                           {" "}
-                          JAVASCRIPT{" "}
+                          R{" "}
                         </button>
                       </h2>
                       <div
@@ -352,34 +317,28 @@ const Web = () => {
                         <div class="accordion-body">
                           <ul>
                             <li>
-                              CSS (Cascading Style Sheets) developer is
-                              responsible for designing and implementing the
-                              visual elements of a website or web application.
-                              This involves creating and styling the layout,
-                              typography, colors, and other design elements of
-                              a website or application using CSS.
-                            </li>
-                            <li>
-                              A CSS developer works closely with web designers
-                              and developers to ensure that the visual design
-                              of a website or application is both
-                              aesthetically pleasing and functional.
+                            R is a programming language and software environment for statistical computing and graphics.
+ It's particularly well-suited for data analysis and visualization, and has a large library of packages for statistical analysis, machine learning, and data visualization.
+
                             </li>
                             <li>
                               Resource link:
-                              <a href="https://www.w3schools.com/js/">
-                                w3schools
+                              <a href=" https://www.datacamp.com/courses/free-introduction-to-r">
+                                Data Camp
                               </a>
                               ,
-                              <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript//">
-                                freecodecamp
+                              <a href="https://swirlstats.com/">
+                                swirlstats
                               </a>
                             </li>
                             <li>
                               {" "}
                               IDE link:
-                              <a href="https://code.visualstudio.com/">
-                                VScode
+                              <a href="https://www.rstudio.com/products/rstudio/download/">
+                                R studio
+                              </a>,
+                              <a href="https://jupyter.org/install">
+                                Jupyter Notebook
                               </a>
                             </li>
                           </ul>
@@ -428,7 +387,7 @@ const Web = () => {
                     aria-controls="1p"
                   >
                     {" "}
-                    Responsive Website{" "}
+                    Image classification using convolutional neural networks{" "}
                   </button>
                 </h2>
                 <div
@@ -441,20 +400,16 @@ const Web = () => {
                     Technology Stack:
                     <ul>
                       <li>
-                        HTML for creating the structure and content of the
-                        website
+                      Python: a popular programming language for machine learning and data science.
                       </li>
                       <li>
-                        CSS for styling the website, including responsive
-                        design techniques for different screen sizes
+                      TensorFlow or PyTorch: deep learning frameworks for building and training neural networks.
                       </li>
                       <li>
-                        JavaScript for adding interactivity and dynamic
-                        features to the website
+                      OpenCV: an open-source computer vision library for image processing and analysis.
                       </li>
                       <li>
-                        Bootstrap or another CSS framework for responsive
-                        design and styling
+                      Scikit-learn: a machine learning library for data preprocessing, model selection, and evaluation.
                       </li>
                     </ul>
                     <p>
@@ -462,29 +417,27 @@ const Web = () => {
                     </p>
                     <ul>
                       <li>
-                        A responsive design that adapts to different screen
-                        sizes and device orientations
+                      Preprocessing the images by resizing and normalizing them.
                       </li>
                       <li>
-                        High-quality images and multimedia content that load
-                        quickly and look great on all devices
+                      Training the model on a large dataset of labeled images.
                       </li>
                       <li>
-                        A user-friendly interface with well-organized content
-                        and easy-to-use buttons and links
+                      Creating a convolutional neural network architecture with multiple layers, including convolutional, pooling, and dense layers.
                       </li>
                       <li>
-                        Optimized performance with fast load times and smooth
-                        transitions between pages
+                      Evaluating the model's performance using metrics such as accuracy, precision, and recall.
                       </li>
                       <li>
-                        Compatibility with popular web browsers, including
-                        Chrome, Firefox, Safari, and Edge
+                        Tuning the model's hyperparameters to improve its performance.
+                      </li>
+                      <li>
+                      Using transfer learning to leverage pre-trained models for image classification tasks.
                       </li>
                       <li>
                         Reference Link:{" "}
-                        <a href="https://github.com/bedimcode/responsive-portfolio-website-Alexa">
-                          Portfolio website
+                        <a href="https://github.com/CatchZeng/bing_images">
+                          Github
                         </a>
                       </li>
                     </ul>
@@ -503,7 +456,7 @@ const Web = () => {
                     aria-controls="2p"
                   >
                     {" "}
-                    E-commerce website{" "}
+                    Recommendation system using collaborative filtering{" "}
                   </button>
                 </h2>
                 <div
@@ -513,31 +466,11 @@ const Web = () => {
                 >
                   <div class="accordion-body">
                     {" "}
+                    Problem Statement :  Build a recommendation system that can suggest relevant products or services to users based on their past behavior or preferences.
                     Technology Stack:
                     <ul>
                       <li>
-                        HTML for creating the structure and content of the
-                        website
-                      </li>
-                      <li>
-                        CSS for styling the website, including responsive
-                        design techniques for different screen sizes
-                      </li>
-                      <li>
-                        JavaScript for adding interactivity and dynamic
-                        features to the website
-                      </li>
-                      <li>
-                        PHP for server-side programming and processing of user
-                        input
-                      </li>
-                      <li>
-                        MySQL for database management and storage of product
-                        and user data
-                      </li>
-                      <li>
-                        Payment gateway APIs like PayPal or Stripe for secure
-                        payment processing.
+                      Python, Scikit-learn, Pandas, Surprise or TensorRec problem statement and key features
                       </li>
                     </ul>
                     <p>
@@ -545,38 +478,27 @@ const Web = () => {
                     </p>
                     <ul>
                       <li>
-                        A catalog of products with high-quality images and
-                        detailed descriptions
+                      Collaborative filtering is a technique that predicts a user's preference for an item based on the preferences of other users with similar past behavior or preferences.
                       </li>
                       <li>
-                        A user-friendly interface with a search bar and
-                        filters for browsing and finding products
+                      Python is the programming language used to develop the recommendation system.
                       </li>
                       <li>
-                        A shopping cart that stores items and allows users to
-                        adjust quantities or remove items before checkout
+                      Scikit-learn is a Python library used for machine learning tasks such as data preprocessing, model selection, and model training
                       </li>
                       <li>
-                        Secure payment processing with payment gateway APIs to
-                        protect users' financial information
+                      Pandas is a Python library used for data manipulation and analysis.
                       </li>
                       <li>
-                        User accounts with login and registration
-                        functionality, allowing users to save billing and
-                        shipping information and view past orders
+                      Surprise is a Python library used for recommendation systems that provides a variety of algorithms for collaborative filtering, such as user-based or item-based collaborative filtering.
                       </li>
                       <li>
-                        Email notifications for order confirmations, shipping
-                        updates, and other important information
-                      </li>
-                      <li>
-                        An administrative dashboard for managing product
-                        listings, orders, and user accounts
+                      TensorRec is a Python library for building recommendation systems using matrix factorization.
                       </li>
                       <li>
                         Reference Link:{" "}
-                        <a href="https://github.com/shopizer-ecommerce/shopizer">
-                          E-commerce
+                        <a href="https://github.com/XuefengHuang/RecommendationSystem">
+                          Github
                         </a>
                       </li>
                     </ul>
@@ -584,76 +506,7 @@ const Web = () => {
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="p3">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#3p"
-                    aria-expanded="false"
-                    aria-controls="3p"
-                  >
-                    {" "}
-                    Realtime Application{" "}
-                  </button>
-                </h2>
-                <div
-                  id="3p"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="p3"
-                >
-                  <div class="accordion-body">
-                    {" "}
-                    Technology Stack:
-                    <ul>
-                      <li>
-                        HTML, CSS, and JavaScript for the front-end user
-                        interface
-                      </li>
-                      <li>
-                        Node.js for the back-end server and application logic
-                      </li>
-                      <li>
-                        Socket.io for real-time communication between the
-                        server and client
-                      </li>
-                      <li>
-                        Express.js for server-side routing and API management
-                      </li>
-                      <li>MongoDB or MySQL for database management</li>
-                      <li>Passport.js for user authentication</li>
-                      <li>
-                        Bootstrap or another CSS framework for responsive
-                        design and styling
-                      </li>
-                    </ul>
-                    <p>
-                      The website will need to have the following features:
-                    </p>
-                    <ul>
-                      <li>User registration and login with authentication</li>
-                      <li>Creating and joining chat rooms</li>
-                      <li>
-                        Real-time messaging with the ability to send images,
-                        videos, and links
-                      </li>
-                      <li>Private messaging between users</li>
-                      <li>User status tracking (online/offline)</li>
-                      <li>Notification system for new messages and alerts</li>
-                      <li>
-                        Responsive design for desktop and mobile devices
-                      </li>
-                      <li>
-                        Reference Link:{" "}
-                        <a href="https://github.com/aslanyanhaik/Quick-Chat">
-                          Chat App
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -697,7 +550,7 @@ const Web = () => {
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Web Developer</h5>
+                      <h5 class="card-title">ML engineer</h5>
                       <p class="card-text">
                         <WorkIcon />
                         0-2 years
@@ -734,7 +587,7 @@ const Web = () => {
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Web Developer</h5>
+                      <h5 class="card-title">ML engineer</h5>
                       <p class="card-text">
                         <WorkIcon />
                         0-4 years
@@ -778,7 +631,7 @@ const Web = () => {
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Web Developer</h5>
+                      <h5 class="card-title">Data scientist</h5>
                       <p class="card-text">
                         <WorkIcon />
                         5-7 years
@@ -815,7 +668,7 @@ const Web = () => {
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Web Developer</h5>
+                      <h5 class="card-title">Data Analyst</h5>
                       <p class="card-text">
                         <WorkIcon />
                         0-2 years
@@ -849,4 +702,4 @@ const Web = () => {
   )
 }
 
-export default Web
+export default Ml

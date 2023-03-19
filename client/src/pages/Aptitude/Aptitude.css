@@ -2,7 +2,7 @@
 
 .main-container {
   font-family: 'Anek Malayalam', sans-serif;
-  background: url("D:\Hackathon_E-Seva\client\public\assets\edu2.jpg");
+  background: url("../../assets/edu2.jpg");
   color: #11052c;
   display: flex;
   justify-content: center;
