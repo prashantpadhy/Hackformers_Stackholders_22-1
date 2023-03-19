@@ -50,7 +50,7 @@ const Home = () => {
           <header className="mb-auto">
             <div>
             <img className="float-md-start my-0 mb-0" src={logo} alt="logo" />
-              <h2 className="float-md-start mb-0">CareerMate</h2>
+              {/* <h2 className="float-md-start mb-0">CareerMate</h2> */}
               <nav className="nav nav-masthead justify-content-center float-md-end">
                 <Link
                   className="nav-link fw-bold py-1 px-0 active"
