@@ -17,8 +17,20 @@ function Aptitude2({result , setResult}) {
     for(var q in result){
         sorted.push([q , result[q]])
     }
-    sorted.sort((a,b)=>a[1]-b[1])
+    sorted.sort((a,b)=>b[1]-a[1])
     console.log(sorted)
+    var new_sorted = []
+    for(var s of sorted){
+        console.log(s)
+        new_sorted.push(s[0])
+    }
+    console.log(new_sorted)
+    console.log(questions1)
+    questions1.sort(function(a,b){
+        console.log(a.type)
+        return new_sorted.indexOf(a.type) - new_sorted.indexOf(b.type) 
+    })
+    console.log(questions1)
     const { question, choices, type } = questions1[activeQuestion]
     // const { question1, choices1, type1 } = questions1[activeQuestion-9]
 
@@ -122,6 +134,7 @@ function Aptitude2({result , setResult}) {
     return (
 
         <div className='main-container'>
+            {/* <h1>Aptitude Test</h1> */}
             <div className="quiz-container">
                 
                     <div>

@@ -44,12 +44,12 @@ router.post('/login' , async (req,res)=>{
                 // console.log(user)
                 const token = jwt.sign({user} , "stackholderssecret" , {expiresIn :"1h"});
                 console.log("Hackathon")
-                // res.cookie("token" , token , {
-                //     httpOnly : true,
-                // })
-                // localStorage.setItem("token" ,token)
+                res.cookie("token" , token , {
+                    httpOnly : true,
+                })
+                
                 console.log(token)
-                res.json({success : true , message : "Successfully Logged in"})
+                res.json({success : true , message : "Successfully Logged in" , token : token})
                 console.log("Working")
                 return
 

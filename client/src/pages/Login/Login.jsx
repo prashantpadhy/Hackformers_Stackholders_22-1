@@ -27,6 +27,7 @@ function Login() {
             })
             const json = await userData.json()
             if(json.success){
+                localStorage.setItem("token" ,json.token)
                 Navigate('/')
             }
 

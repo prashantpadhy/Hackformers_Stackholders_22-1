@@ -1,10 +1,23 @@
 import React from 'react'
 import "./Home.css"
 import { Link, useNavigate } from 'react-router-dom';
+import logo from "../../assets/Logo.png";
+import background from "../../assets/bg-1.jpg";
 
 const Home = () => {
   // const [agree , setAgree] = useState(false)
   const Navigate = useNavigate()
+
+  const handleClick = ()=>{
+    if(localStorage.getItem("token")){
+      localStorage.removeItem("token")
+      Navigate('/')
+    }
+    else{
+      Navigate('/signup')
+    }
+  }
+  
 
 
   return (
@@ -27,10 +40,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="d-flex vh-100 text-center text-bg-dark">
+      <div className="d-flex vh-100 text-center text-bg-dark"  style={{
+          backgroundImage: `url(${background})`,
+          backgroundRepeat: "no-repeat",
+          opacity: 1,
+          backgroundSize: "cover",
+        }}>
         <div className="cover-container d-flex vw-100 vh-100 p-3 mx-auto flex-column">
           <header className="mb-auto">
             <div>
+            <img className="float-md-start my-0 mb-0" src={logo} alt="logo" />
               <h2 className="float-md-start mb-0">CareerMate</h2>
               <nav className="nav nav-masthead justify-content-center float-md-end">
                 <Link
@@ -43,8 +62,8 @@ const Home = () => {
                 <Link className="nav-link fw-bold py-1 px-0" to="/about">
                   About
                 </Link>
-                <Link className="nav-link fw-bold py-1 px-0" to="/signup">
-                  Login
+                <Link className="nav-link fw-bold py-1 px-0" to='/signup 'onClick={handleClick}>
+                  {localStorage.getItem("token")? "Logout" :"Login"}
                 </Link>
 
               </nav>

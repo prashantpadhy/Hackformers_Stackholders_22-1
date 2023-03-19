@@ -1,4 +1,6 @@
 import React from 'react'
+// import Webimg from '../../assets/55.jpg'
+// import './Web.css'
 
 const Web = () => {
   return (
@@ -8,15 +10,15 @@ const Web = () => {
         <div class="accordion-item" id="accordionExample1">
           <h2 class="accordion-header" id="headingOne">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed show"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
-              aria-expanded="false"
+              aria-expanded="true"
               aria-controls="collapseOne"
             >
               {" "}
-              Phase 1: (Introduction){" "}
+              Phase 1: (Introduction to the Web development){" "}
             </button>
           </h2>
           <div
@@ -26,7 +28,7 @@ const Web = () => {
             data-bs-parent="#accordionExample"
           >
             <div class="accordion-body">
-              <strong>Basic Introduction.</strong>
+              <strong>Learn all the basics of web development</strong>
 
               {/* frontend */}
               <div class="accordion-item">

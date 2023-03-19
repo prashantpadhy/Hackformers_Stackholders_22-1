@@ -21,7 +21,7 @@ function Aptitude({result , setResult}) {
 
     const handleLast = ()=>{
         console.log(result)
-        Navigate('/aptitude2')
+        Navigate('/aptitude2' , {replace : true})
     }
     const onClickNext = () => {
         setSelectedAnswerIndex(null)
@@ -117,7 +117,8 @@ function Aptitude({result , setResult}) {
     return (
 
         <div className='main-container'>
-            <div className="quiz-container">
+            {/* <h1>Aptitude Test</h1> */}
+            <div className="quiz-container" style={{height: "426px"}}>
                     <div>
                         <div>
                             <span className="active-question-no">
